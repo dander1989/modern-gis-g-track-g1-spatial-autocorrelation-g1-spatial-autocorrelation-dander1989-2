@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Launch Jupyter Notebook
+    init: pip install --upgrade pip && pip install -r requirements.txt
+    command: |
+      jupyter lab --ip=0.0.0.0 --no-browser --NotebookApp.token='' --NotebookApp.password='' --allow-root
+
+ports:
+  - port: 8888
+    onOpen: open-browser
+    name: JupyterLab

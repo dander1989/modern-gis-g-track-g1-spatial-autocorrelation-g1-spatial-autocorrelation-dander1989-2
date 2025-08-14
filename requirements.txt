@@ -1,0 +1,14 @@
+geopandas
+duckdb
+leafmap
+libpysal
+mapclassify
+numpy
+requests
+esda
+contextily
+pysal
+matplotlib
+seaborn
+shapely
+jupyterlab
